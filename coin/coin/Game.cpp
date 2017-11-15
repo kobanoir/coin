@@ -13,6 +13,7 @@ void Game::update() {
 		break;
 		
 	case GAME:
+		play.exe();
 		if (Input::KeySpace.clicked) {
 			state = RESULT;
 		}
@@ -34,9 +35,7 @@ void Game::draw() {
 		font(L"たいとる未定").drawCenter(630, 320);
 		push(L"スペースキーでスタート").drawCenter(630, 640);
 		break;
-
 	case GAME:
-		font(L"げーむがめん").draw();
 		break;
 
 	case RESULT:

@@ -1,4 +1,5 @@
 #pragma once
+#include "main_game.h"
 #include "common.h"
 
 class Game {
@@ -16,4 +17,5 @@ public:
 
 private:
 	State state;
+	Play play;
 };
