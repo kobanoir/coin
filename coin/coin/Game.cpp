@@ -14,7 +14,7 @@ void Game::update() {
 		
 	case GAME:
 		play.exe();
-		if (Input::KeySpace.clicked) {
+		if (play.exe() == false) {
 			state = RESULT;
 		}
 		break;

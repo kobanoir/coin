@@ -10,7 +10,14 @@ public:
 	void get_coin();
 	void set_card();
 private:
+	bool flag;
+	bool put;
+	bool pu;
+	bool win;
+	bool check;
+	int count;
 	int coin;
+	int board_coin;
 	int a_coin;
 	int b_coin;
 	int a_card;
