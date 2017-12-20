@@ -13,8 +13,7 @@ void Game::update() {
 		break;
 		
 	case GAME:
-		play.exe();
-		if (play.exe() == false) {
+		if (play.exe() == true) {
 			state = RESULT;
 		}
 		break;
@@ -40,6 +39,7 @@ void Game::draw() {
 
 	case RESULT:
 		font(L"ÇØÇ¡Ç©ÇÕÇ¡Ç“ÇÂÅ[").draw();
+		play.result();
 		break;
 	}
 }

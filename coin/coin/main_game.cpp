@@ -13,7 +13,7 @@ Play::Play() {
 	count = 0;
 }
 
-void Play::exe() {
+bool Play::exe() {
 	if (put == false) {
 		put_coin();
 		bet_coin();
@@ -21,7 +21,9 @@ void Play::exe() {
 	if (put == true) {
 		get_coin();
 	}
-
+	if (end == true) {
+		return true;
+	}
 }
 
 void Play::put_coin(){
@@ -154,6 +156,9 @@ void Play::get_coin() {
 			a_card += board_coin;
 		}
 		coin -= board_coin;
+		if (coin == 0) {
+			end = true;
+		}
 		win = false;
 	}
 	hoge(L"Aのコイン", a_card, L"枚").draw(200,300);
@@ -169,4 +174,19 @@ void Play::get_coin() {
 
 void Play::set_card() {
 
+}
+
+void Play::result() {
+	static Font hoge(20);
+	hoge(L"Aのコイン", a_card, L"枚").draw(200, 300);
+	hoge(L"Bのコイン", b_card, L"枚").draw(200, 350);
+	if (a_card < b_card) {
+		hoge(L"Bの勝ち=D").draw(200, 400);
+	}
+	else if (a_card > b_card) {
+		hoge(L"Aの勝ち=D").draw(200, 400);
+	}
+	else {
+		hoge(L"引き分け=D").draw(200, 400);
+	}
 }
