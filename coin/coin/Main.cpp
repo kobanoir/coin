@@ -2,7 +2,7 @@
 
 void Main(){
 
-	Window::Resize(1260, 980);
+	Window::Resize(725, 550);
 
 	Game game;
 

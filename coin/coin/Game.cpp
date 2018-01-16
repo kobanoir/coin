@@ -13,9 +13,7 @@ void Game::update() {
 		break;
 		
 	case GAME:
-		if (play.exe() == true) {
-			state = RESULT;
-		}
+		play.exe();
 		break;
 
 	case RESULT:
@@ -31,8 +29,8 @@ void Game::draw() {
 	static Font push(20);
 	switch (state) {
 	case TYTLE:
-		font(L"たいとる未定").drawCenter(630, 320);
-		push(L"スペースキーでスタート").drawCenter(630, 640);
+		font(L"たいとる未定").drawCenter(350, 250);
+		push(L"スペースキーでスタート").drawCenter(350, 350);
 		break;
 	case GAME:
 		break;
