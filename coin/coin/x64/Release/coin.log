@@ -1,0 +1,9 @@
+﻿  Game.cpp
+  Main.cpp
+  main_game.cpp
+     Creating library C:\Users\kobanoir\Desktop\coin\coin\x64\Release\coin.lib and object C:\Users\kobanoir\Desktop\coin\coin\x64\Release\coin.exp
+  Generating code
+  All 245 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  coin.vcxproj -> C:\Users\kobanoir\Desktop\coin\coin\x64\Release\coin.exe
+  coin.vcxproj -> C:\Users\kobanoir\Desktop\coin\coin\x64\Release\coin.pdb (Full PDB)
